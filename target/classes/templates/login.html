@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Login - Laser Airlines</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    </head>
+    <body class="bglogin">        
+        <form th:action="@{/login}" method="post" class="container d-flex justify-content-center mt-5">
+        <div class="card">
+        <h4 class="text-center pt-4 placeicon">ES HORA DE VOLAR</h4> 
+        <span class="info">Entra y descubre todos los beneficios <br> que Laser Airlines tiene para ti.</span>
+        <div class="form-group container"> 
+            <input type="text" name="username" placeholder="&#xf007; &nbsp; Usuario" class="form-control placeicon"> 
+            <input type="password" name="password" placeholder="&#xf084; &nbsp; Contraseña" class="form-control placeicon"> 
+              <br> 
+            <button type="submit" class="btn btn-primary placeicon">&#xf0a9; &nbsp; Ingresar</button>
+        </div>        
+        <div class="text-center container"> 
+            <span class="info2">Acumula millas Laser Pass lavando tu auto en Los Eren.</span>
+            <br>
+        </div>
+        
+    </div>
+</form>
+                
+    </body>
+</html>

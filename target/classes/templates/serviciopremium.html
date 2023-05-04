@@ -1,0 +1,66 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Servicio Premium</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />        
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        
+        <link href="css/premium.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="mainNav">
+            <div th:action="@{/serviciopremium}" method="post" class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Laser Airlines</a>                
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Viajes</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contacto</a></li>
+                        <!-- CERRAR SESIÓN-->
+                        <form method="post" th:action="@{/logout}"><a role="button" class="btn btn-primary btn-sm"  href="logout" style="margin-top: 15px;">Cerrar Sesión</a></form>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="projects-section bg-light" id="projects">
+            <div class="container">
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="./img/bg-masthead2.jpg" alt="" /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Lugares Asombrosos</h4>
+                            <p class="text-black-50 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam elit, accumsan vel nunc ac, ornare vehicula leo. Duis eu dapibus mauris. Proin tempus at arcu et lacinia. Curabitur a nunc tortor. </p>
+                        </div>
+                    </div>
+                </div>
+        <!-- suscríbete-->
+        <section class="signup-section" id="signup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">¡Sé el primero en enterarte de todo!</h2>
+                        <form class="form-inline d-flex">
+                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Tu dirección de correo..." />
+                            <button class="btn btn-primary mx-auto" type="submit">Suscribirse</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Un proyecto hecho con cariño - Isis Carrera y Daniel Romero Febrero 2021</div></footer>
+
+    </body>
+</html>
+

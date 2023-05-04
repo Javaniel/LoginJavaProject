@@ -1,0 +1,30 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Logout - Laser Airlines</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    </head>
+    <body class="bglogout">        
+        <div class="container d-flex justify-content-center mt-5">
+        <div class="card">
+        <h4 class="text-center pt-4 placeicon">GRACIAS POR TU PREFERENCIA</h4> 
+        <span class="info">Esperamos volver a verte pronto.</span>
+            <br> 
+            <div class="container">
+                <form method="post" th:action="@{/logout}">
+                    <a th:ref="@{/logout}"> <input type="submit" class="btn btn-primary placeicon" value="Salir"/></a>
+                </form>               
+
+            </div>
+            <span class="info2">Participa por un viaje a Paradis <br> cada fin de semana.</span>
+        </div>        
+        
+    </div>
+               
+    </body>
+</html>
+

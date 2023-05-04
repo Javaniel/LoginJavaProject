@@ -1,0 +1,54 @@
+body{
+    background-image: url("../img/background2.jpg"),
+    linear-gradient(0deg, rgba(9,60,121,1) 16%, rgba(0,212,255,1) 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.card {
+    position: relative;
+    width: 500px;    
+    background: linear-gradient(rgba(9, 60, 121, 0.75), rgba(35, 43, 85, 0.95)), 
+        url("../img/background2.jpg") no-repeat fixed;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    border-radius: 40px;
+    padding: 20px 5px 10px 5px; 
+    text-align: center;
+}
+
+.container{
+    padding: 20px 5px 10px 5px; 
+}
+
+.card h4 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.info {
+    color: white;
+    text-align: center;
+    font-size: 13px
+}
+.info2 {
+    color: white;
+    text-align: center;
+    font-size: 13px;      
+}
+
+.placeicon {
+     font-family: fontawesome
+ }
+
+.btn btn-primary {
+    background: #4527A0;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 100%;
+    padding-bottom: 10px;
+}

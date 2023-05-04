@@ -1,0 +1,8 @@
+cl\duoc\AerolineaLaser\AerolineaLaserApplication.class
+cl\duoc\AerolineaLaser\dao\UsuarioDAO.class
+cl\duoc\AerolineaLaser\domain\Usuario.class
+cl\duoc\AerolineaLaser\web\WebConfig.class
+cl\duoc\AerolineaLaser\web\SecurityConfig.class
+cl\duoc\AerolineaLaser\service\UsuarioServiceImplementation.class
+cl\duoc\AerolineaLaser\web\ControladorInicio.class
+cl\duoc\AerolineaLaser\service\UsuarioService.class
